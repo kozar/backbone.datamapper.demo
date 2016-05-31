@@ -1,0 +1,37 @@
+.container
+{
+	margin-top: 3em;
+}
+
+.jumbotron
+{
+	background-color: #effffe;
+}
+
+.row .h3
+{
+	margin-top: 0;
+}
+
+.loadingBarContainer
+{
+	width: 30%;
+
+	margin: auto;
+
+	padding: 15px 0;
+
+	text-align: center;
+}
+
+.loadingBar
+{
+	width: 100%;
+}
+
+.thumbnail
+{
+	height: 400px;
+
+	overflow: hidden;
+}

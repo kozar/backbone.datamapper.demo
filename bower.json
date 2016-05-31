@@ -1,0 +1,33 @@
+{
+  "name": "backbone.datamapper.demo",
+  "authors": [
+    "Nikita Kozar <nikita.kozar@gmail.com>"
+  ],
+  "description": "Simple page, that demonstrates usage of the backbone.datamapper",
+  "main": [
+    "index.html",
+    "main.js",
+    "styles.css'"
+  ],
+  "keywords": [
+    "backbone",
+    "datamapper",
+    "demo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone.marionette": "marionette#^2.4.6",
+    "bootstrap": "^3.3.6",
+    "requirejs": "^2.2.0",
+    "require-css": "^0.1.8"
+  }
+}

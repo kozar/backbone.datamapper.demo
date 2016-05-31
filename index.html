@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Demo</title>
+
+    <script src="bower_components/requirejs/require.js"></script>
+    <script>
+        require(['require_config'], function()
+        {
+            require(['main']);
+        });
+    </script>
+
+</head>
+<body>
+<div class="container" id="appContainer">
+
+
+    <div id="header"></div>
+
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <h3>Sample Posts (loaded from <a href=http://jsonplaceholder.typicode.com/">JSONPlaceholder</a>)</h3>
+        </div>
+    </div>
+
+    <div id="main"></div>
+
+    <footer class="text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>&copy; 2016 Nikita Kozar</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script type="text/template" id="loadingViewTemplate">
+    <div class="loadingBarContainer">
+        Loading ...
+        <progress class="loadingBar"></progress>
+    </div>
+</script>
+
+
+<script type="text/template" id="headerViewTemplate">
+    <header class="jumbotron">
+
+        <h2><%- title %></h2>
+
+        <%= about %>
+
+        <p class="text-center">
+            <a class="btn btn-lg btn-success" href="<%- sourceLinkUrl %>" role="button"><%- sourceLinkTitle %></a>
+        </p>
+    </header>
+</script>
+
+<script type="text/template" id="postViewTemplate">
+    <div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>Author:</h3>
+                <div class="userInfo"></div>
+            </div>
+            <div class="caption">
+                <h3>Post:</h3>
+                <h4><%- title %></h4>
+                <p><%- body %></p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="userViewTemplate">
+    <span><%- name %></span> <a href="mailto:<%- email %>">&lt;<%- email %>&gt;</a>
+</script>
+
+
+</body>
+</html>

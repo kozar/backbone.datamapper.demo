@@ -48,6 +48,7 @@ define
          */
         initialize: function (options)
         {
+            this.options = options;
             this.app = options.app;
 
             this._initModels();
@@ -113,8 +114,8 @@ define
 
             $.when
             (
-                this.postsCollection.fetch({ url: 'http://jsonplaceholder.typicode.com/posts', reset: true }),
-                this.usersCollection.fetch({ url: 'http://jsonplaceholder.typicode.com/users', reset: true })
+                this.postsCollection.fetch({ url: this.getOption('postsUrl'), reset: true }),
+                this.usersCollection.fetch({ url: this.getOption('usersUrl'), reset: true })
             )
             .done
             (

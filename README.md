@@ -8,7 +8,7 @@ This is a demo single-page JS web application, that is intended to show
 advantages of usage of the **Backbone.DataMapper** plugin, that is ***yet to be implemented***.
 
 Plugin should provide [DataMapper](http://martinfowler.com/eaaCatalog/dataMapper.html) pattern
-interface or synchronizing Backbone.js Models' data with a server side, instead of built-in
+interface for synchronizing Backbone.js Models' data with a server side, instead of built-in
 [ActiveRecord](http://www.martinfowler.com/eaaCatalog/activeRecord.html) interface.
 
 This should be especially useful for JS applications, that have to deal

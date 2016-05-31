@@ -22,7 +22,7 @@ define
                 '</p>' +
                 '<p>' +
                     'Plugin should provide <a href="http://martinfowler.com/eaaCatalog/dataMapper.html">DataMapper</a> pattern ' +
-                    'interface or synchronizing Backbone.js Models\' data with a server side, instead of built-in ' +
+                    'interface for synchronizing Backbone.js Models\' data with a server side, instead of built-in ' +
                     '<a href="http://www.martinfowler.com/eaaCatalog/activeRecord.html">ActiveRecord</a> interface. ' +
                 '</p>' +
                 '<p>' +
